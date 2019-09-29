@@ -1,0 +1,6 @@
+{
+    "name": "GameLoader",
+    "tree": {
+        "$path": "lib/"
+    }
+}

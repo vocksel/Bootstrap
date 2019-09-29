@@ -1,0 +1,4 @@
+name = "game-loader"
+author = "David Minnerly"
+content_root = "lin"
+version = "0.1.0"

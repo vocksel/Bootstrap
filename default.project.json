@@ -1,0 +1,27 @@
+{
+    "name": "game-loader",
+    "tree": {
+        "$className": "DataModel",
+
+        "HttpService": {
+            "$className": "HttpService",
+            "$properties": {
+                "HttpEnabled": true
+            }
+        },
+
+        "ReplicatedStorage": {
+            "$className": "ReplicatedStorage",
+            "GameLoader": {
+                "$path": "lib/"
+            }
+		},
+
+		"ServerScriptService": {
+			"$className": "ServerScriptService",
+			"Example": {
+				"$path": "example/"
+			}
+		}
+    }
+}
