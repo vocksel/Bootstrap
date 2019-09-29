@@ -1,5 +1,5 @@
 {
-    "name": "game-loader",
+    "name": "Bootstrap",
     "tree": {
         "$className": "DataModel",
 
@@ -12,7 +12,7 @@
 
         "ReplicatedStorage": {
             "$className": "ReplicatedStorage",
-            "GameLoader": {
+            "Bootstrap": {
                 "$path": "lib/"
             }
 		},

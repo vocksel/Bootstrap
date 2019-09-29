@@ -1,5 +1,5 @@
 {
-    "name": "GameLoader",
+    "name": "Bootstrap",
     "tree": {
         "$path": "lib/"
     }

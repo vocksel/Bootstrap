@@ -1,4 +1,4 @@
-local GameLoader = require(game.ReplicatedStorage.GameLoader)
+local Bootstrap = require(game.ReplicatedStorage.Bootstrap)
 
-local loadModules = GameLoader.createLoader("foo", "bar")
+local loadModules = Bootstrap.createLoader("foo", "bar")
 loadModules(script.Parent.Modules:GetChildren())

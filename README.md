@@ -1,20 +1,20 @@
-# GameLoader
+# Bootstrap
 
-Instead of using Scripts or LocalScripts, all of your runtime code is made up of ModuleScripts that get required. Each module returns a function, and that function is called by GameLoader to run it.
+Instead of using Scripts or LocalScripts, all of your runtime code is made up of ModuleScripts that get required. Each module returns a function, and that function is called by Bootstrap to run it.
 
 This puts you in a setup of only having one Script and LocalScript which load all the runtime modules associated with the server or client, respectively.
 
-Runtime modules work the same as Scripts and LocalScripts, with the key difference of allowing you to pass in globals instead of having to modify the environment, as well as being able to control _when_ your code executes. With GameLoader, you can run some setup code before you actually load the rest of your game.
+Runtime modules work the same as Scripts and LocalScripts, with the key difference of allowing you to pass in globals instead of having to modify the environment, as well as being able to control _when_ your code executes. With Bootstrap, you can run some setup code before you actually load the rest of your game.
 
 ## Installation
 
 **Model File (Roblox Studio)**
-- Download the `rbxmx` model file attached to the latest release from the [GitHub releases page](https://github.com/vocksel/game-loader/releases).
+- Download the `rbxmx` model file attached to the latest release from the [GitHub releases page](https://github.com/vocksel/Bootstrap/releases).
 - Insert the model into Studio into a place like `ReplicatedStorage`
 
 **Filesystem**
 - Copy the `lib` directory into your codebase
-- Rename the folder to `GameLoader`
+- Rename the folder to `Bootstrap`
 - Use a plugin like [Rojo](https://github.com/rojo-rbx/rojo) to sync the files into a place
 
 ## Usage
@@ -34,9 +34,9 @@ return function(foo, bar)
 end
 
 -- Run (Script)
-local GameLoader = require(game.ReplicatedStorage.GameLoader)
+local Bootstrap = require(game.ReplicatedStorage.Bootstrap)
 
-local loadModules = GameLoader.createLoader("foo", "bar")
+local loadModules = Bootstrap.createLoader("foo", "bar")
 loadModules(script.Parent.Modules:GetChildren())
 ```
 
